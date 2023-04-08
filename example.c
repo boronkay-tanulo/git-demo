@@ -40,5 +40,8 @@ main(int argc, char **argv)
   result = a * b;
   (void)fprintf(stdout, "a*b=%u\n", result);
 
+  result = a + b;
+  (void)fprintf(stdout, "a+b=%u\n", result);
+
   return fflush(stdout) == 0 ? EXIT_SUCCESS : EXIT_FAILURE;
 }
