@@ -37,5 +37,8 @@ main(int argc, char **argv)
 
   (void)fprintf(stdout, "a=%u b=%u\n", a, b);
 
+  result = a + b;
+  (void)fprintf(stdout, "a+b=%u\n", result);
+
   return fflush(stdout) == 0 ? EXIT_SUCCESS : EXIT_FAILURE;
 }
